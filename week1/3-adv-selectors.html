@@ -3,6 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Basic Selectors</title>
+    <style>
+/*article > p {
+  color: gold;
+}*/
+
+h2 + p {
+  color: deeppink;
+}
+
+ol > li:first-child {
+  color: yellowgreen;
+}
+
+ul li:last-child {
+  color: darkblue;
+}
+
+li:first-child:last-child {
+  font-size: 40px;
+}
+
+article > *:not(p) {
+  color: orange;
+}
+.social-list li:not(:last-child) a {
+  color: red;
+}
+    </style>
 </head>
 <body>
 <div class="wrapper">
@@ -31,7 +59,7 @@
         <h1>Primary Section✊&#10008;</h1>
     </header>
     <article>
-      <h2 class="featured">First Article</h2>
+      <h2 class="featured">First ✊ Article</h2>
 
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eos itaque nemo unde! Alias assumenda delectus dolorem ducimus, enim eum fugiat, ipsam laborum obcaecati quasi quibusdam repellendus sequi ut? Quisquam.</p>
 
